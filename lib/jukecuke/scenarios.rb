@@ -1,6 +1,6 @@
 require 'cucumber/runtime/features_loader'
 
-module CukeForker
+module Jukecuke
 
   #
   # CukeForker::Scenarios.by_args(args)
