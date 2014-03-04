@@ -26,7 +26,7 @@ module Jukecuke
 
     def self.tagged(tags)
       tag_expression = Gherkin::TagExpression.new(tags)
-      scenario_line_logger = CukeForker::Formatters::ScenarioLineLogger.new(tag_expression)
+      scenario_line_logger = Jukecuke::Formatters::ScenarioLineLogger.new(tag_expression)
       loader = Cucumber::Runtime::FeaturesLoader.new(feature_files, [], tag_expression)
 
       loader.features.each do |feature|
